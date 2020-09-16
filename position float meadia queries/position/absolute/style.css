@@ -1,0 +1,28 @@
+/* position:absolute- relative to the parent with position:relative */
+div {
+  border: 3px solid black;
+  background: cornsilk;
+  margin-top: 40px;
+  position: relative;
+ 
+}
+.one {
+    background: rgb(113, 168, 137);
+    color: white;
+}
+.two {
+    background: rgb(226, 152, 139);
+    color: white;
+    /* position: relative; */
+}
+.special {
+  background: rgb(19, 18, 17);
+  color: rgb(248, 246, 246);
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+/* .container{
+    min-height: 100vh;
+    color: steelblue;
+} */

@@ -1,0 +1,30 @@
+.primary-heading {
+  color: blue;
+}
+#welcome {
+  background-color: cornsilk;
+}
+
+#welcome,
+#about {
+  background-color: cornsilk;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#welcome p {
+  font-size: large;
+}
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 600;
+}
+
+#about span {
+  color: blue;
+  font-weight: 900;
+}

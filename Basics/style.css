@@ -1,0 +1,17 @@
+.primary-heading {
+  color: blue;
+}
+#welcome {
+  background-color: cornsilk;
+}
+
+#welcome,
+#about {
+  background-color: cornsilk;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#welcome p {
+  font-size: large;
+}

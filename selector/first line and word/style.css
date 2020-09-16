@@ -1,0 +1,9 @@
+
+p::first-letter{
+    font-size: 2rem;
+    color: royalblue;
+}
+p::first-line{
+    font-weight: bold;
+    color: salmon;
+}

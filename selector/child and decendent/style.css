@@ -1,0 +1,21 @@
+
+
+/*  child and decendant */
+div h1{
+    color: red
+}
+
+/*  class is more specific */
+.header h1{
+    color: green;
+}
+
+/*  selecting direct child */
+/* div > h1{
+    color: blue;
+} */
+
+/* direct child */
+.header > h1{
+    color: purple;
+}
