@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#main-nav {
+  border: 1px solid rgb(240, 239, 239);
+  background: #e46363;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#main-nav li {
+  /* list-style-type: none; */
+  color: #ccc;
+}
+
+.enhance {
+  color: yellow;
+  background-color: black;
+}

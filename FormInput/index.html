@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Inputs</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Form & Inputs</h2>
+
+    <form action="Process.db">
+      <!-- HTML5 give placeholder option which can be  used to guide input -->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@email.com"
+        />
+      </div>
+
+      <div>
+        <label for="message">Message</label> <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <!-- value is the actual data sent on server -->
+          <!-- selected can be added to make a value  default -->
+          <option value="Male">Male</option>
+          <option value="Female" selected>Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div>
+        <!-- need to define value for each radio button -->
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" id="membership" value="simple" />
+        Simple
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+        />
+        Standard
+        <input type="radio" name="membership" id="membership" value="premium" />
+        Premium
+      </div>
+
+      <div>
+        <!-- need to define value for each radio button -->
+        <label for="membership">Membership</label>
+        <input type="checkbox" name="likes" id="likes" value="coading" />
+        coading
+        <input type="checkbox" name="likes" id="likes" value="rgp-games" />
+        RGP-Games
+        <input type="checkbox" name="likes" id="likes" value="longdrive" />
+        LongDrive
+      </div>
+      <!--  ways to submit form -->
+      <!--  short hand 
+         input:submit -->
+      <input type="submit" value="Submit" />
+
+      <!-- Other option is button -->
+      <button type="submit">Submit</button>
+
+      <!-- reset the form 
+      button:reset-->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div, Span, id and class</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Div Span Id class</h1>
+      <p>Practice</p>
+    </div>
+    <!-- Using Id 
+     must be unique-->
+    <!-- short hand for div id
+    #idname -->
+
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- multiple elements can take same class -->
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        <!-- div is block level element it will take whole new line -->
+        <!-- span is inline they stick togather stays in line -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <div class="enhance"> Laboriosam ex
+        facilis aspernatur dolores corrupti! Harum, voluptas non commodi amet et</div>
+         error dignissimos aperiam id <span class="enhance">fuga qui eveniet vitae ut, nihil rem totam</span>
+        blanditiis deleniti quia omnis dolorum porro odit temporibus?
+      </p>
+    </div>
+
+    <div id="contact" class="card">
+      <h3>Contact me</h3>
+      <ul>
+        <li>Address: abc 50 Main st,</li>
+        <li>Phone: (123) 555-5555</li>
+        <li>Email: mail@mail.com</li>
+      </ul>
+
+      <div id="footer">
+        <p>Copyright 2020</p>
+      </div>
+    </div>
+  </body>
+</html>
