@@ -1,0 +1,16 @@
+a:hover {
+  color: red;
+}
+
+/* active state of link
+when you click a link its active state */
+
+a:active {
+  color: green;
+}
+
+/* visited sudo class
+clicked link are visited link */
+a:visited {
+  color: black;
+}

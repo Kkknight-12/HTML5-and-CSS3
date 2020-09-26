@@ -1,0 +1,35 @@
+div p {
+  background: #ddd;
+}
+
+/* Targeting direct child */
+
+div > p {
+  background: #f4f4;
+}
+
+/* directly after an element 
+sibling*/
+div + p {
+  background: #333;
+  color: #ddd;
+}
+
+/* by Attribute
+all a tag with atribute of target */
+a[target] {
+  background: red;
+  color: white;
+}
+/* specifying target type */
+a[target="_blank"] {
+  background: blue;
+  color: white;
+}
+
+/* specifying attribute values */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 5px;
+}

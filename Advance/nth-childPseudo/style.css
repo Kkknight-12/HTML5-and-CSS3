@@ -1,0 +1,39 @@
+li {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  list-style: none;
+}
+
+/* first child */
+li:first-child {
+  background-color: coral;
+}
+
+li:last-child {
+  background-color: cornflowerblue;
+}
+
+/* nth child
+position 2 and 17*/
+li:nth-child(2),
+li:nth-child(17) {
+  background-color: darkred;
+  color: white;
+}
+
+/* every 3rd
+any number follwed by n + anynumber(this number is position from where the effect take palce, if 0 or left empty effct will take place from first argument number,
+here 3)
+*/
+li:nth-child(3n + 0) {
+  background-color: darkkhaki;
+}
+/* every 4 th list from list 7th list */
+li:nth-child(4n + 7) {
+  background-color: yellow;
+}
+
+/* every odd */
+li:nth-child(odd) {
+  font-size: 20px;
+}

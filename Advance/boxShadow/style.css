@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+}
+
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  background: coral;
+  color: #f4f4f4;
+
+  /* offset-x | offset-y | color */
+  box-shadow: 10px 10px teal;
+
+  /* offset-x | offset-y | blur-radius */
+  box-shadow: 10px 10px 20px teal;
+
+  /* Negative values */
+  box-shadow: -10px -10px 20px teal;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.9);
+
+  /* inset |offset-x| offset-y | color */
+  box-shadow: inset 3px 3px teal;
+
+  /* Multiple shadow */
+  box-shadow: 10px 10px teal, -10px -10px teal;
+}

@@ -1,0 +1,26 @@
+article {
+  padding: 10px 20px;
+  text-align: center;
+}
+/* 
+article p:first-child {
+  color: blueviolet;
+  font-weight: bold;
+}
+article p:last-child {
+  color: red;
+} */
+
+/* After adding heading Article title 
+and horizontal line fist and last child will not work
+
+so we are using :first-of-type and :last-of-type*/
+
+article p:first-of-type {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+article p:last-of-type {
+  color: red;
+}
