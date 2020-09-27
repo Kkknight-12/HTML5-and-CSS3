@@ -1,0 +1,8 @@
+article:nth-of-type(odd) {
+  background: #c4c4c4;
+}
+
+article:nth-of-type(2n + 2) {
+  background: #333;
+  color: #c4c4c4;
+}

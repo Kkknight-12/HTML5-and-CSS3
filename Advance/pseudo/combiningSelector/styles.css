@@ -1,0 +1,12 @@
+/* two element article and div
+have same class => featured content */
+
+article.feature-content {
+  background: grey;
+}
+
+div.feature-content {
+  color: indianred;
+  font-size: 20px;
+  font-weight: bolder;
+}
