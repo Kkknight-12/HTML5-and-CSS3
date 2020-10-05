@@ -1,0 +1,45 @@
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.4em;
+}
+
+/* it will clear left and right floating box2,3*/
+.clr {
+  clear: both;
+}
+
+.box {
+  background: rgb(238, 232, 232);
+  border: 1px solid grey;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* text-align: justify will make the text even when you change the size of  screen */
+.box p {
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+}
+
+/*  to float element in  alighment you must set them in  box first */
+* {
+  box-sizing: border-box;
+}
+/* float left will alone not work it works with width
+width must not be in pixels, percentage are more suitable */
+#box-2 {
+  float: left;
+  width: 68%;
+}
+
+#box-3 {
+  float: Right;
+  width: 30%;
+}

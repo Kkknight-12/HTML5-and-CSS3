@@ -1,0 +1,31 @@
+#Box-1 {
+  font-size: 20px;
+}
+
+#Box-1 p ul {
+  font-size: 1em;
+}
+
+/* rem */
+
+/* default font size for html is 16px 
+h3 value 2rem will be multiplied with 16px
+and return 32px font size*/
+
+#Box-2 h3 {
+  font-size: 2rem;
+}
+/* paragraph 1.5rem will multi with 16px and give
+25.6px font size 
+line-height value 1.7 * 16 = 27.2px 
+*/
+#Box-2 p {
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+/* changing root html values */
+html {
+  font-size: 10px;
+  /* you can make it more reponsive by changing value to 62.5% which will be 10px */
+}

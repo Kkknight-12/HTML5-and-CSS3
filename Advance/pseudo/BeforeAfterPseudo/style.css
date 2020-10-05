@@ -1,5 +1,5 @@
 .is-required:after {
-  content: "*";
+  content: "*after";
   color: red;
   padding-left: 2px;
 }
@@ -35,4 +35,19 @@ header:before {
 header > h1 {
   font-size: 4rem;
   margin: 1rem;
+}
+
+p::before {
+  content: "before with block display";
+  background: red;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+p::after {
+  content: "after with inline default display";
+  background: red;
+  font-size: 20px;
+  color: white;
 }

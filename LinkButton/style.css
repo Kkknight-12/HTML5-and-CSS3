@@ -1,0 +1,29 @@
+a {
+  color: #333;
+  text-decoration: none;
+  transition: ease-in;
+}
+
+a:hover {
+  color: aqua;
+  transition: linear;
+}
+
+/* buttn styling */
+.btn {
+  background: #4c6ca0;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #f4f4f4;
+  background: #446190;
+}
+/* a:active{
+  color:red;
+} */

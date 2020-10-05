@@ -1,0 +1,43 @@
+/*  line to inline
+making a line element to inline elemen to remove the list attribute */
+li {
+  display: inline;
+}
+
+li a {
+  padding-right: 20px;
+}
+
+/*  inline to block
+you need to conver the img to block level element as it is inline element, you cant set margin to inline element
+display: block will convert the img to block level element
+ */
+
+img {
+  display: block;
+  margin: auto;
+}
+
+/* properties of box 
+width will change the size of box 
+this code will display the box in block form*/
+.box {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* view the box in-line form
+- change diplay to inline-block 
+- also set the  box size property to border box
+- it will allow ur to go horizotal with width feature to sez to width of box*/
+
+.box {
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,32 @@
+#box1 {
+  background-color: coral;
+  /* border-style: solid;
+  border-width: 3px;
+  border-color: green; */
+  border: solid 0.5rem green;
+  border-radius: 0.5rem;
+}
+
+#box2 {
+  background-color: black;
+  color: white;
+  border-top: solid rgb(43, 0, 255) 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+#box3 {
+  height: 400px;
+  /* background-image: url("./ray.jpeg"); */
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  background: url("./ray.jpeg") no-repeat center/cover;
+  color: white;
+}
+
+#box4 {
+  height: 400px;
+  background: url("./bottom.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+}

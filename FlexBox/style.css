@@ -1,0 +1,43 @@
+*{
+    box-sizing: border:box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+
+    /* changing orientation of flexbox (row is default) from row to column*/
+    flex-direction: column;
+}
+
+.item{
+    background: #f4f4f4;
+    border: #ccc solid 2px;
+    margin:10px;
+    padding:10px;
+    text-align: center;
+    border-radius:10px;
+    width:200px
+}
+
+
+.flex-container{
+    flex-direction:row
+}
+.item-1{
+    flex-shrink: 0;
+
+}
+.item-2{
+    flex-grow: 1;
+}
+/* short
+flex: grow shrink bases */
+.item-3{
+    flex: 1 0 200px;
+}
