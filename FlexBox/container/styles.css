@@ -1,0 +1,35 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #ccc;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* default behaviour of felx item is they stick left to right in a row 
+comment/uncomment display flex to see
+*/
+.flex-container {
+  display: flex;
+}
+
+.box {
+  height: 100px;
+  min-width: 100px;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+}

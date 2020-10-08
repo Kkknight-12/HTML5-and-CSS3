@@ -1,0 +1,51 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #ccc;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* default behaviour of felx item is they stick left to right in a row 
+comment/uncomment display flex to see
+*/
+.flex-container {
+  display: flex;
+  background: #eee;
+}
+
+/* shrink 
+the bigger the number the more they shrink */
+
+.box {
+  height: 100px;
+  /* changing min-width to width
+  keeping width=>320 px
+  which is 960/3
+  where 960 is max width
+  number of boxes are 3 */
+  width: 320px;
+}
+
+/* giving different growth rate */
+.one {
+  background: red;
+  flex-shrink: 1;
+}
+
+/* growing at twice rate then other */
+
+.two {
+  background: blue;
+  flex-shrink: 2;
+}
+
+/* growing at three times of others */
+.three {
+  background: green;
+  flex-shrink: 3;
+}

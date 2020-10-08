@@ -1,0 +1,47 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #ccc;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* default behaviour of felx item is they stick left to right in a row 
+comment/uncomment display flex to see
+*/
+.flex-container {
+  display: flex;
+}
+
+/* grow 
+number is just a growth rate
+it you give one value they will grow same*/
+
+.box {
+  height: 100px;
+  min-width: 100px;
+  /* flex-grow: 1; */
+}
+
+/* giving different growth rate */
+.one {
+  background: red;
+  flex-grow: 1;
+}
+
+/* growing at twice rate then other */
+
+.two {
+  background: blue;
+  flex-grow: 2;
+}
+
+/* growing at three times of others */
+.three {
+  background: green;
+  flex-grow: 3;
+}

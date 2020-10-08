@@ -1,0 +1,45 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #ccc;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* default behaviour of flex item is they stick left to right in a row 
+comment/uncomment display flex to see
+*/
+.flex-container {
+  display: flex;
+  background: #eee;
+  /* adding wrap */
+  flex-wrap: wrap;
+}
+
+/* when we shrink beyond 200px the box wrap around the next line*/
+
+.box {
+  height: 100px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+/* giving different growth rate */
+.one {
+  background: red;
+}
+
+/* growing at twice rate then other */
+
+.two {
+  background: blue;
+}
+
+/* growing at three times of others */
+.three {
+  background: green;
+}
