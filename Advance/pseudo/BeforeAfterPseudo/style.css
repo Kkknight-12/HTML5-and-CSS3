@@ -42,7 +42,7 @@ p::before {
   background: red;
   font-size: 20px;
   color: white;
-  display: block;
+  /* display: block; */
 }
 
 p::after {

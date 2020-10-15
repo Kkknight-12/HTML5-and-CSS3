@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 786px;
+}
+
+.main {
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.a {
+  transform: translate(2rem, 8rem);
+}
+
+.a h1 {
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+.a p {
+  max-width: 25rem;
+}
+.a .click {
+  margin-top: 1.5rem;
+  width: 80px;
+  line-height: 25px;
+}
+
+.b {
+  transform: translate(37rem, 28rem);
+}
+
+.c {
+  transform: translate(39rem, 3rem) rotate(270deg);
+}

@@ -1,0 +1,58 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* default behaviour of felx item is they stick left to right in a row 
+comment/uncomment display flex to see
+*/
+.flex-row {
+  display: flex;
+  background: #eee;
+  /* flex-wrap: wrap; */
+  /* stacking the elements in row is default behaviour of
+  flex*/
+  flex-flow: row;
+  /* justify work on main axis 
+  for row it is horizontal
+  for column it is vertical */
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  background: #eee;
+  height: 800px;
+  /* flex-wrap: wrap; */
+  /* stacking the elements in row is default behaviour of
+  flex*/
+  flex-flow: column;
+  justify-content: center;
+}
+
+.box {
+  height: 100px;
+  /* changing min-width to width
+  keeping width=>320 px
+  which is 960/3
+  where 960 is max width
+  number of boxes are 3 */
+  /* width: 320px; */
+  flex: 0 0 100px;
+}
+
+.one {
+  background: red;
+}
+
+/* growing at twice rate then other */
+
+.two {
+  background: blue;
+}
+
+/* growing at three times of others */
+.three {
+  background: green;
+}

@@ -1,0 +1,65 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+body {
+  background: #eee;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  background: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* block property when screen is  less then 768px */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  /* display block */
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav ul.social {
+  /* flex: 1 1 0; */
+  display: flex;
+  justify-content: center;
+}
+
+nav ul.social li {
+  /* growth property to align and put some space */
+  /* flex: 0 1 150px; */
+  flex-basis: 130px;
+}
+
+/* 
+flex property for screen size greater than
+768px */
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    /* justify-content: flex-start; */
+  }
+  nav li {
+    flex: 1 1 0;
+  }
+}
