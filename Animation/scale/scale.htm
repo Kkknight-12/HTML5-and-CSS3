@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transition</title>
+    <style type="text/css">
+      img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 200px;
+        transition: transform 2s;
+      }
+
+      img:hover {
+        /* change width */
+        /* transform: scaleX(2); */
+
+        /* change height */
+        /* transform: scaleY(2); */
+
+        /* change width and height */
+        /* transform: scale(2, 3); */
+
+        /* change width and height equally */
+        transform: scale(2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="cat.jpg" alt="" />
+  </body>
+</html>

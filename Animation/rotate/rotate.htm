@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transition</title>
+    <style type="text/css">
+      img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 200px;
+        transition: transform 2s;
+      }
+
+      img:hover {
+        /* rotate with gradiant
+		one full circle  is 400 gradiant */
+        transform: rotate(200grad);
+
+        /* clock wise rotation with deg */
+        /* transform: rotate(360deg); */
+        /* Anti-clock wise rotation with deg */
+        /* transform: rotate(-360deg); */
+
+        /* clock wise rotation with 1 turn */
+        /* transform: rotate(1turn); */
+        /* Anti clock wise rotation with 1 turn */
+        /* transform: rotate(-1turn); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="cat.jpg" alt="" />
+  </body>
+</html>
