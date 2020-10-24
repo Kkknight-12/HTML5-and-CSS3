@@ -1,0 +1,73 @@
+/* checkbox is hidden 
+check uncheck the box will slide the button/bar */
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+/* cylinderical shape container */
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 100px;
+  height: 200px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  transform: translate(55rem, -1rem);
+}
+
+/* postion, size of white ball
+before after will set the position near container */
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.5s;
+}
+
+input:checked + label {
+  background: #bada55;
+}
+
+/* when the checkbox is checked
+position of white button move
+in the mentioned way
+
++ is used to target direct sibiling
+
+label:after - is white ball
+*/
+input:checked + label:after {
+  top: calc(100% - 5px);
+  /* the negative value of translateY
+  keep the white button squeeze inside the switch */
+  transform: translateY(-100%);
+}
+
+/* squize effect,
+postion of round button
+ after checking the box 
+*/
+label:active:after {
+  /* :active  
+  A link becomes active when you click on it. */
+  width: 60px;
+  height: 130px;
+  align-items: center;
+  left: 20px;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
