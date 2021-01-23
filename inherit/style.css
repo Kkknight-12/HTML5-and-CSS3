@@ -1,0 +1,34 @@
+div {
+  /* font color and weight will be inherited by all p tags */
+  color: lightcoral;
+  font-weight: bold;
+  /* border and margin will not be inherit */
+  border: 1px solid grey;
+  margin: 40px;
+  padding: 40px;
+}
+
+p {
+  /* to inherit border and margin you need to write inherit */
+  border: inherit;
+  margin: inherit;
+  padding: inherit;
+  color: crimson;
+}
+
+h1 {
+  text-align: center;
+}
+
+svg {
+  fill: orange;
+  width: 150px;
+}
+
+/* Presentational Styles */
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
