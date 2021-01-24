@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+header {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #f4f4f4;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+h1 h2 {
+  color: #271918;
+}
+
+header h1 {
+  font-size: 65px;
+  margin: 0;
+}
+.banner {
+  position: relative;
+}
+
+.im-one {
+  height: 600px;
+  background: url("./img/assassins-creed-valhalla-normal-hero-background-01-ps4-22apr20-en-us.jpeg")
+    no-repeat center/cover;
+  max-width: 100%;
+  margin-top: 75px;
+}
+
+.banner .welcome {
+  background-color: rgba(0, 0, 0, 0.001);
+  color: #271918;
+  padding: 20px;
+  position: absolute;
+  left: 60%;
+  top: 35%;
+}
+
+.banner h2 {
+  font-size: 55px;
+}
+
+.banner h2 span {
+  font-size: 1.3em;
+}
+
+nav {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 75px;
+}
+
+nav ul {
+  /* li will not gonna wrap to next line */
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline-block;
+  width: 25%;
+  font-size: 24px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+nav li a.join-club {
+  color: #5a1f1f;
+}
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  /* box-sizing: border-box; */
+}
+.im-two {
+  height: 600px;
+  background: url("./img/491495eaa1d608140e6-78434262-acv-iconicengland-evening-female-1588257056780-1588264312228.jpg")
+    no-repeat left/cover;
+  /* max-width: 50%; */
+  margin-top: 75px;
+}
+.im-three {
+  height: 600px;
+  background: url("./img/assassins-creed-valhalla-eivor-viking-raider-vikings-pc-2880x1800-555.jpg")
+    no-repeat center/cover;
+  /* max-width: 50%; */
+  margin-top: 75px;
+}
+
+article h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+article p {
+  line-height: 2em;
+  color: #271918;
+}
+
+.images {
+  white-space: nowrap;
+}
+
+.images li {
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+}
+
+/* .images li img {
+  max-width: 100%;
+} */
+
+.join {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #271918;
+}
+
+.join h2 {
+  font-size: 36px;
+}
+.join p {
+  margin-top: 10px;
+}
+
+form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
+
+footer {
+  background: #271918;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

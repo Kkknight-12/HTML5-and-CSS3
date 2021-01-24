@@ -1,5 +1,5 @@
 div p {
-  background: #ddd;
+  background: #73946d;
 }
 
 /* Targeting direct child */
@@ -11,8 +11,7 @@ div > p {
 /* directly after an element 
 sibling*/
 div + p {
-  background: #333;
-  color: #ddd;
+  background: #e9ab9b44;
 }
 
 /* by Attribute

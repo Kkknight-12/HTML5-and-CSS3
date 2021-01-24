@@ -9,6 +9,7 @@ div[id] {
 div[id="header"] {
   color: white;
 }
+
 div[id*="co"] {
   color: orange;
 }
@@ -16,6 +17,7 @@ div[id*="co"] {
 a[title="Same-link"] {
   color: red;
 }
+
 a[href^="http"] {
   background: grey;
 }

@@ -10,3 +10,7 @@ div.feature-content {
   font-size: 20px;
   font-weight: bolder;
 }
+
+div #error {
+  background-color: green;
+}

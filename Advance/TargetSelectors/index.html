@@ -9,35 +9,39 @@
   <body>
     <div>
       <p>
-        <strong>Purple child of div use sign div > p </strong> Lorem ipsum,
-        dolor sit amet consectetur adipisicing elit. Beatae, sapiente?
+        <strong>p tag, direct child of div seleted using sign div > p </strong>
+        all the direct child with tag p will be selected
       </p>
 
       <ul>
         <li>Item 1</li>
-        <li><p>Item 2</p></li>
+        <li><p>p tag selected with div p</p></li>
         <li>Item 3</li>
       </ul>
 
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        another direct child of div with tag p which was seleted with
+        <strong>div > p</strong>.
+      </p>
     </div>
 
     <p>
-      <strong>sibling of div, use sign div + p </strong> Lorem ipsum dolor sit
-      amet.
+      <strong
+        >first sibling of div with tag p, seleted using sign div + p. </strong
+      >div + p will select first sibling
     </p>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>second silbing with tag p which was not selected</p>
 
     <a href="#">Page 1</a>
-    <a href="#" target="_self">Page 2</a>
-    <a href="#" target="_self">Page 3</a>
-    <a href="http://google.com" target="_blank">Google</a>
+    <a href="#" target="_self">a[target]</a>
+    <a href="#" target="_self">a[target]</a>
+    <a href="http://google.com" target="_blank">a[target="_blank"]</a>
 
     <br />
     <br />
     <form>
-      <input type="text" placeholder="name" />
-      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="input[type='text']" />
+      <input type="email" placeholder="input[type='email']" />
       <input type="submit" value="Submit" />
     </form>
   </body>
