@@ -15,7 +15,7 @@ and return 32px font size*/
 #Box-2 h3 {
   font-size: 2rem;
 }
-/* paragraph 1.5rem will multi with 16px and give
+/* paragraph 1.6rem will multi with 16px and give
 25.6px font size 
 line-height value 1.7 * 16 = 27.2px 
 */
