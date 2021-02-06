@@ -71,4 +71,32 @@ body * + * {
 
 .column-sidebar {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-sidebar > .tile {
+  flex: 1;
+}
+
+.login-form h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.login-form input:not([type="checkbox"]):not([type="rdio"]) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+.login-form button {
+  margin-top: 1rem;
+  border: 1px solid #cc6b5a;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
