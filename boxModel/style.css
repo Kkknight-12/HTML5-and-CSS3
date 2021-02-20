@@ -16,6 +16,14 @@ main {
   display: block;
 }
 
+/* Haydon Pickering
+lobotomised owl selector - it target any element 
+that immediately follows any other element. 
+Which means it target all elements that are
+NOT first child of their parent.
+* -> all element 
++ -> sibling selector
+we are excluding body as it is sibling of head */
 body * + * {
   margin-top: 1.5rem;
 }
@@ -40,6 +48,11 @@ header {
   padding: 1em 1.5em;
 }
 
+/* main and sidebar are elements of 
+div with class of contianer
+which is sibbling to header so lobotomised owl selector
+will apply margin top to whole container which will create margin btw
+header and container */
 .sidebar {
   padding: 1.5em;
   background-color: #fff;
@@ -49,6 +62,9 @@ header {
   width: 30%;
   /*  */
   margin-left: 1.5rem;
+  /* removing extra margin as sidebar is 
+  immediate sibling of main, lobotomised owl 
+  selector will apply margin top to sidebar */
   margin-top: 0;
 }
 

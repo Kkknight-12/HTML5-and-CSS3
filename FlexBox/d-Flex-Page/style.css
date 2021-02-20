@@ -30,6 +30,7 @@ body * + * {
   border-radius: 0.2rem;
 }
 
+/* removing margin from all li given by lobotomized owl */
 .site-nav > li {
   margin-top: 0;
 }
