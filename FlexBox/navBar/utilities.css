@@ -1,0 +1,14 @@
+/* Text Colors */
+
+.text-primary {
+  color: rgb(40, 75, 179);
+}
+
+.text-secondary {
+  color: #1c48cea4;
+}
+
+.val {
+  /* display: inline; */
+  font-size: 4rem;
+}
