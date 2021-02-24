@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+}
+body * + * {
+  padding-top: 2rem;
+}
+/* 
+//////////////////////////////
+            ems              /
+//////////////////////////////
+*/
+
+/* the value of padding changes as you change the 
+value of your font size
+calculation for padding->
+1em will be equal 1 * 16 to 16px padding
+changing value em to 2 em will make it
+2 * 16 = 32px padding*/
+.padded {
+  font-size: 16px;
+  padding: 1em;
+}
+
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  background: lightgray;
+}
+
+/* padding of both the box will be calculated
+as you write font size */
+
+.box-small {
+  font-size: 12px;
+}
+.box-big {
+  font-size: 18px;
+}
+
+/* 
+///////////////////////////////
+using ems to define font size /
+//////////////////////////////
+*/
+/* 
+ems are defnied by current element font size.
+what if you declare font size = 1.5em ... ?
+
+font size can't equal to 1.5 time itself. Instead
+font-size are derieved from inherited font size.
+*/
+
+body {
+  font-size: 16px;
+}
+
+.slogan {
+  font-size: 1.2em;
+}
+/* slogan specified font size in 1.2em
+we need to refer to inherited font-size of 16px
+1.2 * 16 = 19.2px */
+
+/* 
+slogan 2
+paragraph inherits a font size of 16 px from the body, 
+producing a calculated font size of 19.2 px. 
+This means that 19.2 px is now the local value for an em, 
+and that value is used to calculate the padding.
+font = 16 * 1.2 = 19.2px, padding = 19.2*1.2 = 23.04 */
+
+.slogan2 {
+  font-size: 1.2em;
+  padding: 1.2em;
+  background-color: #ccc;
+}
+
+/* 
+Each list has a font size 0.8 times that of its parent. 
+This means the first list has a font size of 12.8 px, 
+but the next one down is 10.24 px (12.8 px × 0.8), 
+and the third level is 8.192 px, and so on. Similarly,
+ if you specified a size larger than 1 em, the text 
+ would continually grow instead. */
+ul {
+  font-size: 0.8em;
+}
+
+/* 
+What we want is to specify the font at the top level, 
+then maintain the same font size all the way down
+
+One way you can accomplish this is sets the font size 
+of the first list to .8 em as before. 
+The second selector in the listing then targets all 
+unordered lists within an unordered list—all of them 
+except the top level
+*/
+/* targeting the first ul */
+ul.ul2 {
+  font-size: 0.8em;
+}
+
+/* now targeting all the ul expept the 1st one */
+ul.ul2 ul {
+  font-size: 1em;
+}

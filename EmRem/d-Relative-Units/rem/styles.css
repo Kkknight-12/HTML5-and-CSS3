@@ -1,0 +1,28 @@
+/* The root node is the ancestor of all other elements in 
+the document. It has a special pseudo-class selector (:root) 
+that you can use to target it. */
+body * + * {
+  padding-top: 1.5rem;
+}
+
+:root {
+  /* 16px as  defalut browser font size is 16px
+    so 16 * 1 = 16px */
+  font-size: 1em;
+}
+
+/* Rem is short for root em. Instead of being relative to 
+the current element, rems are relative to the root element. 
+No matter where you apply it in the document, 1.2 rem has the
+same computed value: 1.2 times the font size of the root element.
+*/
+
+/*  
+the root font size is the browser’s default of 16 px (an em on the root element is 
+relative to the browser’s default). Unordered lists have a specified font size 
+of .8 rem, which calculates to 12.8 px. Because this is relative to the root, the 
+font size will remain constant, even if you nest lists. */
+ul {
+  /* 16 * 0.8 = 12.8px */
+  font-size: 0.8rem;
+}
