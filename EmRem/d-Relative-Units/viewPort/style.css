@@ -1,0 +1,11 @@
+/*  
+defined with both a height and a width of 90 vmin, 
+which equals 90% of the smaller of the two dimensions—90% 
+of the height on landscape screens, or 90% of the width
+on portrait. 
+*/
+.square {
+  width: 90vmin;
+  height: 90vmin;
+  background-color: #369;
+}

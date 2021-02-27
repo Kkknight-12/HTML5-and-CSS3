@@ -1,0 +1,30 @@
+/*
+defining a variable named --main-font 
+*/
+:root {
+  --main-font: Helvetica, Arial, sans-serif;
+  --brand-bolor: #369;
+}
+/* name must begin with two hyphens (--) */
+
+/* function called var() allows the use of variables. You’ll use this function to reference the --main-font variable just defined */
+
+p {
+  font-family: var(--main-font);
+  /* color: var(--brand-bolor); */
+}
+
+/* The var() function accepts a second parameter, which specifies a fallback value. If the variable specified in the first parameter is not defined, then the second value is used instead. */
+
+p.sec-para {
+  color: var(--secondary-color, blue);
+}
+/* secondary-color variable is not defined, so the fallback value blue is used. */
+
+/* If a var() function evaluates to an invalid value, the property will be set to its initial value. For example, if the variable in padding: var(--brand -color) evaluates to a color, it would be an invalid padding value. In that case, the padding would be set to 0 instead. */
+
+/* 
+///////////////////////////////////////
+changing custom property dynamically  /
+///////////////////////////////////////
+*/

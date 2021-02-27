@@ -1,0 +1,42 @@
+/* 
+Let’s say you want your default font size to be 12 px. 
+Instead of setting a 10 px default then overriding it throughout the page, set that value at the root. 
+The desired value divided by the inherited value—in this case, the browser’s default—is 12/16, which equals 0.875. */
+
+:root {
+  font-size: 0.75em;
+}
+
+body * + * {
+  margin-top: 1em;
+}
+
+.panel {
+  /* 
+    for padding borderRadius ems
+    px for border
+    */
+  padding: 1em;
+  border: 1px solid #999;
+  border-radius: 0.5em;
+}
+
+.panel > h2 {
+  /*  rems for font size */
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 0.875em;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 1em;
+  }
+}
