@@ -124,3 +124,7 @@ button {
 .submenu > li a:hover {
   background-color: #fff;
 }
+
+.dropdown-label {
+  padding: 0.5em 2em 0.5em 1.5em;
+}
