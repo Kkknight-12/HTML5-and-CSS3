@@ -147,6 +147,31 @@ p {
   background: var(--clr-primary-8);
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: var(--clr-primary-5);
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and( min-width: 992px ) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Navbar
@@ -168,7 +193,7 @@ Hero
 .hero-banner {
   text-align: center;
   color: var(--clr-white);
-  /* padding: 0 3em; */
+  padding: 0 3em;
 }
 
 .hero-banner h1 {
@@ -177,12 +202,41 @@ Hero
 
 .hero-banner p {
   max-width: 35em;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
   color: var(--clr-white);
   letter-spacing: var(--spacing);
 }
 
+.hero-btn {
+  padding: 0.9em 1.6em;
+  font-size: 1.25em;
+  background: var(--clr-white);
+  color: var(--clr-primary-5);
+}
+
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+
+/* if width is 768 or larger then
+show background image */
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.5)),
+      url("../images/main.jpeg") center/cover no-repeat;
+  }
+
+  .hero-banner {
+    padding: 0;
+  }
+
+  .hero-banner p {
+    max-width: 45em;
+  }
+}
 /*
 =============== 
 About
