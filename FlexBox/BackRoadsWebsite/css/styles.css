@@ -157,6 +157,32 @@ Navbar
 Hero
 ===============
 */
+.hero {
+  min-height: 100vh;
+  background: var(--clr-primary-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  /* padding: 0 3em; */
+}
+
+.hero-banner h1 {
+  text-transform: uppercase;
+}
+
+.hero-banner p {
+  max-width: 35em;
+  /* margin-left: auto;
+  margin-right: auto; */
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+
 /*
 =============== 
 About
