@@ -1,8 +1,6 @@
 // ********** set date ************
 // select span
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
+const date = (document.getElementById("date").innerHTML = new Date().getFullYear());
 
 // ********** nav toggle ************
 // select button and links
@@ -35,3 +33,14 @@ scrollLinks.forEach(link => {
     });
   });
 });
+
+const printer = {};
+
+printer.on = true;
+printer.mode = 'black and white';
+printer['remainingSheets'] = 168;
+
+printer.print = function () {
+  console.log('The printer is printing!');
+};
+console.log(printer)
