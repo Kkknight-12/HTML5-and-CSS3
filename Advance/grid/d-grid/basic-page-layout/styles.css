@@ -42,3 +42,16 @@ nav {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
+
+.tile {
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+.tile > :first-child {
+  margin-top: 0;
+}
+
+.tile * + * {
+  margin-top: 1.5em;
+}
