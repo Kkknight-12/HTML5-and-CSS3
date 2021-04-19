@@ -15,8 +15,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns:
+    [left-start]2fr
+    [left-end right-start] 1fr
+    [right-end];
+  grid-template-rows: repeat(4, [row] auto);
   grid-gap: 1.5em;
   max-width: 1080px;
   margin: 0 auto;
@@ -24,22 +27,22 @@ body {
 
 header,
 nav {
-  grid-column: 1 / 3;
+  grid-column: left-start / right-end;
   grid-row: span 1;
 }
 
 .main {
-  grid-column: 1 / 2;
-  grid-row: 3/5;
+  grid-column: left;
+  grid-row: row 3 / span 2;
 }
 
 .sidebar-top {
-  grid-column: 2 / 3;
+  grid-column: right;
   grid-row: 3 / 4;
 }
 
 .sidebar-bottom {
-  grid-column: 2 / 3;
+  grid-column: right;
   grid-row: 4 / 5;
 }
 
