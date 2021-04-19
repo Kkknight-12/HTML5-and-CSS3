@@ -13,37 +13,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* gird-template-areas and gird-area */
 .container {
   display: grid;
-  grid-template-columns:
-    [left-start]2fr
-    [left-end right-start] 1fr
-    [right-end];
-  grid-template-rows: repeat(4, [row] auto);
+  grid-template-areas:
+    "title title"
+    "nav nav"
+    "main aside1"
+    "main aside2";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(4, auto);
   grid-gap: 1.5em;
   max-width: 1080px;
   margin: 0 auto;
 }
 
-header,
+header {
+  grid-area: title;
+}
+
 nav {
-  grid-column: left-start / right-end;
-  grid-row: span 1;
+  grid-area: nav;
 }
 
 .main {
-  grid-column: left;
-  grid-row: row 3 / span 2;
+  grid-area: main;
 }
 
 .sidebar-top {
-  grid-column: right;
-  grid-row: 3 / 4;
+  grid-area: aside1;
 }
 
 .sidebar-bottom {
-  grid-column: right;
-  grid-row: 4 / 5;
+  grid-area: aside2;
 }
 
 .tile {
